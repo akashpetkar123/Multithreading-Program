@@ -36,7 +36,7 @@ public class Ball extends JFrame implements Runnable
 					synchronized(this)
 					{
 						if(rx%300 == 0)
-							notify();
+							notifyAll();
 						rx++;
 					}
 					Thread.sleep(50);
